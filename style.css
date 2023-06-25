@@ -121,6 +121,8 @@ body {
 
 .input-field {
   position: fixed;
+  display: flex;
+  justify-content: center;
   width: 100%;
   font-size: 1.8rem;
   top: 0;
@@ -130,13 +132,15 @@ body {
 
   /* pointer-events: none; */
   /* visibility: hidden; */
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 #input {
   outline: none;
   padding: 1rem;
-  width: 32rem;
+  width: 40rem;
+  background-color: rgb(248, 248, 248);
+  font-weight: bold;
   font-size: 1.8rem;
   border: 1px solid black;
 }
