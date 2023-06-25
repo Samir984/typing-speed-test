@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Pathway Extreme", sans-serif;
+  color: #333;
+}
+
+.app {
+  margin: 5rem auto;
+  max-width: 80rem;
+  border: 2px solid greenyellow;
+  padding: 1rem;
+}
+
+/* user- setting */
+.user-setting {
+  font-size: 1.6rem;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.set-timmer {
+  width: 10rem;
+  padding: 1rem;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+.runing-timmer {
+  font-weight: bold;
+  font-size: 2rem;
+  color: orangered;
+}
+
+.reset {
+  background-color: forestgreen;
+  color: white;
+  font-size: inherit;
+  border: none;
+  padding: 1rem;
+}
+
+/* user-procress */
+.user-procress {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.user-procress > * {
+  position: relative;
+  background-color: white;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.user-procress > * span:last-child {
+  position: absolute;
+  color: rgb(241, 89, 24);
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  bottom: 0;
+  left: 0;
+}
+
+.word-count,
+.char-count,
+.accuracy {
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.content {
+  padding: 3rem 0;
+  font-size: 2.4rem;
+}
+
+.typing-text {
+  letter-spacing: 1px;
+  color: #555;
+  word-break: break-all;
+  text-align: justify;
+}
+
+.cursor {
+  position: absolute;
+  background-color: red;
+  width: 0.2rem;
+  height: 2.6rem;
+  animation: blink 1s infinite;
+}
+
+.correct {
+  color: rgb(15, 145, 15);
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+.input-field {
+  position: fixed;
+  width: 100%;
+  font-size: 1.8rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  /* pointer-events: none; */
+  /* visibility: hidden; */
+  opacity: 0;
+}
+
+#input {
+  outline: none;
+  padding: 1rem;
+  width: 32rem;
+  font-size: 1.8rem;
+  border: 1px solid black;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
